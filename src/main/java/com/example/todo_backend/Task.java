@@ -15,6 +15,15 @@ public class Task {
     private String title;
     private boolean completed;
 
+    @Override
+    public String toString() {
+        return "Task{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", completed=" + completed +
+                '}';
+    }
+
     // Getters and setters
     public Long getId() {
         return id;
@@ -42,11 +51,5 @@ public class Task {
 
 
 
-    @Override
-    public String toString() {
-        return "Task{" +
-                "title='" + title + '\'' +
-                ", completed=" + completed +
-                '}';
-    }
+
 }
