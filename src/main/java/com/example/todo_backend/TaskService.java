@@ -23,7 +23,10 @@ public class TaskService {
     }
 
     public void updateTask(Task updatedTask) {
+        System.out.println("EDITING task with ID: " + updatedTask.getId());
+
         taskRepository.save(updatedTask);
+
     }
 }
 

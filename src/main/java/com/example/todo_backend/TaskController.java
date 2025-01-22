@@ -6,7 +6,7 @@ import java.util.List;
 
 
 @RestController
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+@CrossOrigin(origins = "http://localhost:5173")
 @RequestMapping("/api/tasks")
 public class TaskController {
 
@@ -15,6 +15,7 @@ public class TaskController {
 
     @GetMapping
     public List<Task> getAllTasks() {
+        System.out.println("Fetching all tasks...");
         return taskService.getAllTasks();
     }
 
@@ -36,6 +37,7 @@ public class TaskController {
         updatedTask.setId(id);
         System.out.println("Task updated: "+ updatedTask);
         taskService.updateTask(updatedTask);
+
     }
 }
 
