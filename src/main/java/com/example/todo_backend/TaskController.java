@@ -6,7 +6,7 @@ import java.util.List;
 
 
 @RestController
-@CrossOrigin(origins = "https://todo-react-6wgfr5oa5-kayyaxes-projects.vercel.app:3000")
+@CrossOrigin(origins = "https://todo-react-6wgfr5oa5-kayyaxes-projects.vercel.app")
 @RequestMapping("/api/tasks")
 public class TaskController {
 
