@@ -6,7 +6,7 @@ import java.util.List;
 
 
 @RestController
-@CrossOrigin(origins = "https://todo-react-kar.vercel.app/")
+@CrossOrigin(origins = "${FRONTEND_URL}")
 @RequestMapping("/api/tasks")
 public class TaskController {
 
